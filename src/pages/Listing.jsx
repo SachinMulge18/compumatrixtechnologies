@@ -20,8 +20,8 @@ const Listing = () => {
         <li>Office</li>
       </ul>
       <div className="flex flex-wrap gap-5 w-[70%] justify-center py-5">
-        {featuredProperties.map((curr) => (
-          <div
+        {featuredProperties.map((curr,index) => (
+          <div key={index}
             className="h-72 w-72 cursor-pointer relative hover:translate-y-1"
             style={{
               backgroundImage: `url(${curr.image})`,
